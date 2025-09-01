@@ -10,6 +10,8 @@ use Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull;
 use Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance;
 use Webkul\Core\Http\Middleware\SecureHeaders;
 use Webkul\Installer\Http\Middleware\CanInstall;
+use Illuminate\Session\Middleware\StartSession;
+use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
@@ -40,6 +42,16 @@ return Application::configure(basePath: dirname(__DIR__))
          * Add the overridden middleware at the end of the list.
          */
         $middleware->replaceInGroup('web', BaseEncryptCookies::class, EncryptCookies::class);
+
+              /**
+       * Remove session and cookie middleware from the 'web' middleware group.
+       */
+      $middleware->removeFromGroup('web', [StartSession::class, AddQueuedCookiesToResponse::class]);
+
+      /**
+       * Adding session and cookie middleware globally to apply across non-web routes (e.g. GraphQL)
+       */
+      $middleware->append([StartSession::class, AddQueuedCookiesToResponse::class]);
     })
     ->withSchedule(function (Schedule $schedule) {
         //

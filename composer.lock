@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dc52a94d30562eb739cf3a489ceecd7c",
+    "content-hash": "eac6467d545818bc74bc28608c4690ac",
     "packages": [
         {
             "name": "astrotomic/laravel-translatable",
@@ -98,6 +98,57 @@
                 }
             ],
             "time": "2024-08-28T09:20:26+00:00"
+        },
+        {
+            "name": "bagisto/graphql-api",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bagisto/headless-ecommerce.git",
+                "reference": "b6b3542f0a0098592cb1825ef2a2ffe913a73410"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bagisto/headless-ecommerce/zipball/b6b3542f0a0098592cb1825ef2a2ffe913a73410",
+                "reference": "b6b3542f0a0098592cb1825ef2a2ffe913a73410",
+                "shasum": ""
+            },
+            "require": {
+                "mll-lab/laravel-graphiql": "^3.1",
+                "nuwave/lighthouse": "^6.23",
+                "php-open-source-saver/jwt-auth": "^2.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": [],
+                    "providers": [
+                        "Webkul\\GraphQLAPI\\Providers\\GraphQLAPIServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webkul\\GraphQLAPI\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vivek Sharma",
+                    "email": "viveksh047@webkul.in"
+                }
+            ],
+            "description": "Bagisto GraphQL API",
+            "support": {
+                "issues": "https://github.com/bagisto/headless-ecommerce/issues",
+                "source": "https://github.com/bagisto/headless-ecommerce/tree/main"
+            },
+            "time": "2025-08-29T11:02:25+00:00"
         },
         {
             "name": "bagisto/image-cache",
@@ -1989,6 +2040,48 @@
             "time": "2025-02-03T10:55:03+00:00"
         },
         {
+            "name": "haydenpierce/class-finder",
+            "version": "0.5.3",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:hpierce1102/ClassFinder.git",
+                "reference": "40703445c18784edcc6411703e7c3869af11ec8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/hpierce1102%2FClassFinder/repository/archive.zip?sha=40703445c18784edcc6411703e7c3869af11ec8c",
+                "reference": "40703445c18784edcc6411703e7c3869af11ec8c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "~9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "HaydenPierce\\ClassFinder\\": "src/",
+                    "HaydenPierce\\ClassFinder\\UnitTest\\": "test/unit"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hayden Pierce",
+                    "email": "hayden@haydenpierce.com"
+                }
+            ],
+            "description": "A library that can provide of a list of classes in a given namespace",
+            "time": "2023-06-18T17:43:01+00:00"
+        },
+        {
             "name": "intervention/image",
             "version": "2.7.2",
             "source": {
@@ -2520,6 +2613,64 @@
                 }
             ],
             "time": "2024-10-14T11:59:49+00:00"
+        },
+        {
+            "name": "laragraph/utils",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laragraph/utils.git",
+                "reference": "035c92b37f40c6b51027e76f90ef25d9a9458c56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laragraph/utils/zipball/035c92b37f40c6b51027e76f90ef25d9a9458c56",
+                "reference": "035c92b37f40c6b51027e76f90ef25d9a9458c56",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "~5.6.0 || ~5.7.0 || ~5.8.0 || ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12",
+                "illuminate/http": "~5.6.0 || ~5.7.0 || ~5.8.0 || ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12",
+                "php": "^7.2 || ^8",
+                "thecodingmachine/safe": "^1.1 || ^2 || ^3",
+                "webonyx/graphql-php": "^0.13.2 || ^14 || ^15"
+            },
+            "require-dev": {
+                "ergebnis/composer-normalize": "^2.11",
+                "jangregor/phpstan-prophecy": "^1",
+                "mll-lab/php-cs-fixer-config": "^4",
+                "orchestra/testbench": "~3.6.0 || ~3.7.0 || ~3.8.0 || ~3.9.0 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9 || ^10 || ^10.x-dev",
+                "phpstan/extension-installer": "^1",
+                "phpstan/phpstan": "^1",
+                "phpstan/phpstan-deprecation-rules": "^1",
+                "phpstan/phpstan-phpunit": "^1",
+                "phpstan/phpstan-strict-rules": "^1",
+                "phpunit/phpunit": "^7.5 || ^8.5 || ^9 || ^10.5 || ^11",
+                "thecodingmachine/phpstan-safe-rule": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laragraph\\Utils\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Benedikt Franke",
+                    "email": "benedikt@franke.tech"
+                }
+            ],
+            "description": "Utilities for using GraphQL with Laravel",
+            "homepage": "https://github.com/laragraph/utils",
+            "support": {
+                "issues": "https://github.com/laragraph/utils/issues",
+                "source": "https://github.com/laragraph/utils"
+            },
+            "time": "2025-02-12T13:19:02+00:00"
         },
         {
             "name": "laravel/framework",
@@ -3210,6 +3361,79 @@
                 "source": "https://github.com/laravel/ui/tree/v4.6.1"
             },
             "time": "2025-01-28T15:15:29+00:00"
+        },
+        {
+            "name": "lcobucci/jwt",
+            "version": "5.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lcobucci/jwt.git",
+                "reference": "a835af59b030d3f2967725697cf88300f579088e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/a835af59b030d3f2967725697cf88300f579088e",
+                "reference": "a835af59b030d3f2967725697cf88300f579088e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-openssl": "*",
+                "ext-sodium": "*",
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0",
+                "psr/clock": "^1.0"
+            },
+            "require-dev": {
+                "infection/infection": "^0.29",
+                "lcobucci/clock": "^3.2",
+                "lcobucci/coding-standard": "^11.0",
+                "phpbench/phpbench": "^1.2",
+                "phpstan/extension-installer": "^1.2",
+                "phpstan/phpstan": "^1.10.7",
+                "phpstan/phpstan-deprecation-rules": "^1.1.3",
+                "phpstan/phpstan-phpunit": "^1.3.10",
+                "phpstan/phpstan-strict-rules": "^1.5.0",
+                "phpunit/phpunit": "^11.1"
+            },
+            "suggest": {
+                "lcobucci/clock": ">= 3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lcobucci\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Luís Cobucci",
+                    "email": "lcobucci@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to work with JSON Web Token and JSON Web Signature",
+            "keywords": [
+                "JWS",
+                "jwt"
+            ],
+            "support": {
+                "issues": "https://github.com/lcobucci/jwt/issues",
+                "source": "https://github.com/lcobucci/jwt/tree/5.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/lcobucci",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/lcobucci",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2025-01-26T21:29:45+00:00"
         },
         {
             "name": "league/commonmark",
@@ -4172,6 +4396,72 @@
             "time": "2024-03-31T07:05:07+00:00"
         },
         {
+            "name": "mll-lab/laravel-graphiql",
+            "version": "v3.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mll-lab/laravel-graphiql.git",
+                "reference": "30f78443ccca4b7e0d8d1465edab95566e359443"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mll-lab/laravel-graphiql/zipball/30f78443ccca4b7e0d8d1465edab95566e359443",
+                "reference": "30f78443ccca4b7e0d8d1465edab95566e359443",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^9 || ^10 || ^11 || ^12",
+                "illuminate/contracts": "^9 || ^10 || ^11 || ^12",
+                "illuminate/support": "^9 || ^10 || ^11 || ^12",
+                "php": "^8"
+            },
+            "require-dev": {
+                "ergebnis/composer-normalize": "^2.45",
+                "larastan/larastan": "^2.9.14 || ^3.1",
+                "laravel/framework": "^9 || ^10 || ^11 || ^12",
+                "mll-lab/php-cs-fixer-config": "^5.10",
+                "orchestra/testbench": "^7.52 || ^8.33 || ^9.11 || ^10",
+                "phpstan/extension-installer": "^1.4.3",
+                "phpstan/phpstan": "^1.12.20 || ^2.1.7",
+                "phpstan/phpstan-phpunit": "^1.4.2 || ^2.0.6",
+                "phpunit/phpunit": "^9.6.22 || ^10.5.45 || ^11.5.15 || ^12.0.10"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MLL\\GraphiQL\\GraphiQLServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MLL\\GraphiQL\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Benedikt Franke",
+                    "email": "benedikt@franke.tech"
+                }
+            ],
+            "description": "Easily integrate GraphiQL into your Laravel project",
+            "keywords": [
+                "graphiql",
+                "graphql",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/mll-lab/laravel-graphiql/issues",
+                "source": "https://github.com/mll-lab/laravel-graphiql/tree/v3.3.4"
+            },
+            "time": "2025-05-19T09:57:21+00:00"
+        },
+        {
             "name": "mobiledetect/mobiledetectlib",
             "version": "4.8.09",
             "source": {
@@ -4571,6 +4861,73 @@
                 }
             ],
             "time": "2025-02-12T12:17:51+00:00"
+        },
+        {
+            "name": "namshi/jose",
+            "version": "7.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/namshi/jose.git",
+                "reference": "89a24d7eb3040e285dd5925fcad992378b82bcff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/namshi/jose/zipball/89a24d7eb3040e285dd5925fcad992378b82bcff",
+                "reference": "89a24d7eb3040e285dd5925fcad992378b82bcff",
+                "shasum": ""
+            },
+            "require": {
+                "ext-date": "*",
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-pcre": "*",
+                "ext-spl": "*",
+                "php": ">=5.5",
+                "symfony/polyfill-php56": "^1.0"
+            },
+            "require-dev": {
+                "phpseclib/phpseclib": "^2.0",
+                "phpunit/phpunit": "^4.5|^5.0",
+                "satooshi/php-coveralls": "^1.0"
+            },
+            "suggest": {
+                "ext-openssl": "Allows to use OpenSSL as crypto engine.",
+                "phpseclib/phpseclib": "Allows to use Phpseclib as crypto engine, use version ^2.0."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Namshi\\JOSE\\": "src/Namshi/JOSE/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alessandro Nadalin",
+                    "email": "alessandro.nadalin@gmail.com"
+                },
+                {
+                    "name": "Alessandro Cinelli (cirpo)",
+                    "email": "alessandro.cinelli@gmail.com"
+                }
+            ],
+            "description": "JSON Object Signing and Encryption library for PHP.",
+            "keywords": [
+                "JSON Web Signature",
+                "JSON Web Token",
+                "JWS",
+                "json",
+                "jwt",
+                "token"
+            ],
+            "support": {
+                "issues": "https://github.com/namshi/jose/issues",
+                "source": "https://github.com/namshi/jose/tree/master"
+            },
+            "time": "2016-12-05T07:27:31+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -5025,6 +5382,136 @@
                 }
             ],
             "time": "2024-11-21T10:39:51+00:00"
+        },
+        {
+            "name": "nuwave/lighthouse",
+            "version": "v6.62.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuwave/lighthouse.git",
+                "reference": "74dbc61a68580563afe4d75e6e7c1b546827b131"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/74dbc61a68580563afe4d75e6e7c1b546827b131",
+                "reference": "74dbc61a68580563afe4d75e6e7c1b546827b131",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "haydenpierce/class-finder": "^0.4 || ^0.5",
+                "illuminate/auth": "^9 || ^10 || ^11 || ^12",
+                "illuminate/bus": "^9 || ^10 || ^11 || ^12",
+                "illuminate/contracts": "^9 || ^10 || ^11 || ^12",
+                "illuminate/http": "^9 || ^10 || ^11 || ^12",
+                "illuminate/pagination": "^9 || ^10 || ^11 || ^12",
+                "illuminate/queue": "^9 || ^10 || ^11 || ^12",
+                "illuminate/routing": "^9 || ^10 || ^11 || ^12",
+                "illuminate/support": "^9 || ^10 || ^11 || ^12",
+                "illuminate/validation": "^9 || ^10 || ^11 || ^12",
+                "laragraph/utils": "^1.5 || ^2",
+                "php": "^8",
+                "thecodingmachine/safe": "^1 || ^2 || ^3",
+                "webonyx/graphql-php": "^15"
+            },
+            "require-dev": {
+                "algolia/algoliasearch-client-php": "^3",
+                "bensampo/laravel-enum": "^5 || ^6",
+                "ergebnis/composer-normalize": "^2.2.2",
+                "fakerphp/faker": "^1.21",
+                "google/protobuf": "^3.21",
+                "larastan/larastan": "^2.9.14 || ^3.0.4",
+                "laravel/framework": "^9 || ^10 || ^11 || ^12",
+                "laravel/legacy-factories": "^1.1.1",
+                "laravel/pennant": "^1",
+                "laravel/scout": "^8 || ^9 || ^10",
+                "mattiasgeniar/phpunit-query-count-assertions": "^1.1",
+                "mll-lab/graphql-php-scalars": "^6.4.1",
+                "mll-lab/php-cs-fixer-config": "^5",
+                "mockery/mockery": "^1.5",
+                "nesbot/carbon": "^2.62.1 || ^3.8.4",
+                "orchestra/testbench": "^7.50 || ^8.32 || ^9.10 || ^10.1",
+                "phpbench/phpbench": "^1.2.6",
+                "phpstan/extension-installer": "^1",
+                "phpstan/phpstan": "^1.12.18 || ^2",
+                "phpstan/phpstan-mockery": "^1.1.3 || ^2",
+                "phpstan/phpstan-phpunit": "^1.1.1 || ^2",
+                "phpunit/phpunit": "^9.6.4 || ^10 || ^11",
+                "predis/predis": "^1.1 || ^2.1",
+                "pusher/pusher-php-server": "^5 || ^6 || ^7.0.2",
+                "rector/rector": "^1 || ^2",
+                "thecodingmachine/phpstan-safe-rule": "^1.2"
+            },
+            "suggest": {
+                "ext-protobuf": "Improve protobuf serialization performance (used for tracing)",
+                "google/protobuf": "Required when using the tracing driver federated-tracing",
+                "laravel/pennant": "Required for the @feature directive",
+                "laravel/scout": "Required for the @search directive",
+                "mll-lab/graphql-php-scalars": "Useful scalar types, required for @whereConditions",
+                "mll-lab/laravel-graphiql": "A graphical interactive in-browser GraphQL IDE - integrated with Laravel",
+                "pusher/pusher-php-server": "Required when using the Pusher Subscriptions driver"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Nuwave\\Lighthouse\\LighthouseServiceProvider",
+                        "Nuwave\\Lighthouse\\Async\\AsyncServiceProvider",
+                        "Nuwave\\Lighthouse\\Auth\\AuthServiceProvider",
+                        "Nuwave\\Lighthouse\\Bind\\BindServiceProvider",
+                        "Nuwave\\Lighthouse\\Cache\\CacheServiceProvider",
+                        "Nuwave\\Lighthouse\\GlobalId\\GlobalIdServiceProvider",
+                        "Nuwave\\Lighthouse\\OrderBy\\OrderByServiceProvider",
+                        "Nuwave\\Lighthouse\\Pagination\\PaginationServiceProvider",
+                        "Nuwave\\Lighthouse\\SoftDeletes\\SoftDeletesServiceProvider",
+                        "Nuwave\\Lighthouse\\Testing\\TestingServiceProvider",
+                        "Nuwave\\Lighthouse\\Validation\\ValidationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nuwave\\Lighthouse\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christopher Moore",
+                    "email": "chris@nuwavecommerce.com",
+                    "homepage": "https://www.nuwavecommerce.com"
+                },
+                {
+                    "name": "Benedikt Franke",
+                    "email": "benedikt@franke.tech",
+                    "homepage": "https://franke.tech"
+                }
+            ],
+            "description": "A framework for serving GraphQL from Laravel",
+            "homepage": "https://lighthouse-php.com",
+            "keywords": [
+                "graphql",
+                "laravel",
+                "laravel-graphql"
+            ],
+            "support": {
+                "issues": "https://github.com/nuwave/lighthouse/issues",
+                "source": "https://github.com/nuwave/lighthouse"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spawnia",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/lighthouse_php",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2025-08-22T08:12:23+00:00"
         },
         {
             "name": "open-telemetry/api",
@@ -6038,6 +6525,102 @@
                 "source": "https://github.com/php-http/promise/tree/1.3.1"
             },
             "time": "2024-03-15T13:55:21+00:00"
+        },
+        {
+            "name": "php-open-source-saver/jwt-auth",
+            "version": "v2.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHP-Open-Source-Saver/jwt-auth.git",
+                "reference": "9af3bd953b5671247c330562183e159f10700533"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHP-Open-Source-Saver/jwt-auth/zipball/9af3bd953b5671247c330562183e159f10700533",
+                "reference": "9af3bd953b5671247c330562183e159f10700533",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/auth": "^10|^11|^12",
+                "illuminate/contracts": "^10|^11|^12",
+                "illuminate/http": "^10|^11|^12",
+                "illuminate/support": "^10|^11|^12",
+                "lcobucci/jwt": "^5.4",
+                "namshi/jose": "^7.0",
+                "nesbot/carbon": "^2.0|^3.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3",
+                "illuminate/console": "^10|^11|^12",
+                "illuminate/routing": "^10|^11|^12",
+                "mockery/mockery": "^1.6",
+                "orchestra/testbench": "^8|^9|^10",
+                "phpstan/phpstan": "^2",
+                "phpunit/phpunit": "^10.5|^11"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "JWTAuth": "PHPOpenSourceSaver\\JWTAuth\\Facades\\JWTAuth",
+                        "JWTFactory": "PHPOpenSourceSaver\\JWTAuth\\Facades\\JWTFactory"
+                    },
+                    "providers": [
+                        "PHPOpenSourceSaver\\JWTAuth\\Providers\\LaravelServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-develop": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PHPOpenSourceSaver\\JWTAuth\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sean Tymon",
+                    "email": "tymon148@gmail.com",
+                    "homepage": "https://tymon.xyz",
+                    "role": "Forked package creator | Developer"
+                },
+                {
+                    "name": "Eric Schricker",
+                    "email": "eric.schricker@adiutabyte.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Fabio William Conceição",
+                    "email": "messhias@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Max Snow",
+                    "email": "contact@maxsnow.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "JSON Web Token Authentication for Laravel and Lumen",
+            "homepage": "https://github.com/PHP-Open-Source-Saver/jwt-auth",
+            "keywords": [
+                "Authentication",
+                "JSON Web Token",
+                "auth",
+                "jwt",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/PHP-Open-Source-Saver/jwt-auth/issues",
+                "source": "https://github.com/PHP-Open-Source-Saver/jwt-auth"
+            },
+            "time": "2025-03-17T11:41:37+00:00"
         },
         {
             "name": "phpoffice/phpspreadsheet",
@@ -9354,6 +9937,74 @@
             "time": "2024-09-09T11:45:10+00:00"
         },
         {
+            "name": "symfony/polyfill-php56",
+            "version": "v1.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php56.git",
+                "reference": "54b8cd7e6c1643d78d011f3be89f3ef1f9f4c675"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/54b8cd7e6c1643d78d011f3be89f3ef1f9f4c675",
+                "reference": "54b8cd7e6c1643d78d011f3be89f3ef1f9f4c675",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "metapackage",
+            "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/polyfill",
+                    "name": "symfony/polyfill"
+                },
+                "branch-alias": {
+                    "dev-main": "1.20-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 5.6+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php56/tree/v1.20.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-10-23T14:02:19+00:00"
+        },
+        {
             "name": "symfony/polyfill-php80",
             "version": "v1.32.0",
             "source": {
@@ -10390,6 +11041,145 @@
             "time": "2025-01-17T11:39:41+00:00"
         },
         {
+            "name": "thecodingmachine/safe",
+            "version": "v3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/safe.git",
+                "reference": "2cdd579eeaa2e78e51c7509b50cc9fb89a956236"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/safe/zipball/2cdd579eeaa2e78e51c7509b50cc9fb89a956236",
+                "reference": "2cdd579eeaa2e78e51c7509b50cc9fb89a956236",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "php-parallel-lint/php-parallel-lint": "^1.4",
+                "phpstan/phpstan": "^2",
+                "phpunit/phpunit": "^10",
+                "squizlabs/php_codesniffer": "^3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/special_cases.php",
+                    "generated/apache.php",
+                    "generated/apcu.php",
+                    "generated/array.php",
+                    "generated/bzip2.php",
+                    "generated/calendar.php",
+                    "generated/classobj.php",
+                    "generated/com.php",
+                    "generated/cubrid.php",
+                    "generated/curl.php",
+                    "generated/datetime.php",
+                    "generated/dir.php",
+                    "generated/eio.php",
+                    "generated/errorfunc.php",
+                    "generated/exec.php",
+                    "generated/fileinfo.php",
+                    "generated/filesystem.php",
+                    "generated/filter.php",
+                    "generated/fpm.php",
+                    "generated/ftp.php",
+                    "generated/funchand.php",
+                    "generated/gettext.php",
+                    "generated/gmp.php",
+                    "generated/gnupg.php",
+                    "generated/hash.php",
+                    "generated/ibase.php",
+                    "generated/ibmDb2.php",
+                    "generated/iconv.php",
+                    "generated/image.php",
+                    "generated/imap.php",
+                    "generated/info.php",
+                    "generated/inotify.php",
+                    "generated/json.php",
+                    "generated/ldap.php",
+                    "generated/libxml.php",
+                    "generated/lzf.php",
+                    "generated/mailparse.php",
+                    "generated/mbstring.php",
+                    "generated/misc.php",
+                    "generated/mysql.php",
+                    "generated/mysqli.php",
+                    "generated/network.php",
+                    "generated/oci8.php",
+                    "generated/opcache.php",
+                    "generated/openssl.php",
+                    "generated/outcontrol.php",
+                    "generated/pcntl.php",
+                    "generated/pcre.php",
+                    "generated/pgsql.php",
+                    "generated/posix.php",
+                    "generated/ps.php",
+                    "generated/pspell.php",
+                    "generated/readline.php",
+                    "generated/rnp.php",
+                    "generated/rpminfo.php",
+                    "generated/rrd.php",
+                    "generated/sem.php",
+                    "generated/session.php",
+                    "generated/shmop.php",
+                    "generated/sockets.php",
+                    "generated/sodium.php",
+                    "generated/solr.php",
+                    "generated/spl.php",
+                    "generated/sqlsrv.php",
+                    "generated/ssdeep.php",
+                    "generated/ssh2.php",
+                    "generated/stream.php",
+                    "generated/strings.php",
+                    "generated/swoole.php",
+                    "generated/uodbc.php",
+                    "generated/uopz.php",
+                    "generated/url.php",
+                    "generated/var.php",
+                    "generated/xdiff.php",
+                    "generated/xml.php",
+                    "generated/xmlrpc.php",
+                    "generated/yaml.php",
+                    "generated/yaz.php",
+                    "generated/zip.php",
+                    "generated/zlib.php"
+                ],
+                "classmap": [
+                    "lib/DateTime.php",
+                    "lib/DateTimeImmutable.php",
+                    "lib/Exceptions/",
+                    "generated/Exceptions/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP core functions that throw exceptions instead of returning FALSE on error",
+            "support": {
+                "issues": "https://github.com/thecodingmachine/safe/issues",
+                "source": "https://github.com/thecodingmachine/safe/tree/v3.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/OskarStark",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/shish",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/staabm",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-05-14T06:15:44+00:00"
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "v2.3.0",
             "source": {
@@ -10722,6 +11512,80 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "webonyx/graphql-php",
+            "version": "v15.24.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webonyx/graphql-php.git",
+                "reference": "030a04d22d52d7fc07049d0e3b683d2b40f90457"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/030a04d22d52d7fc07049d0e3b683d2b40f90457",
+                "reference": "030a04d22d52d7fc07049d0e3b683d2b40f90457",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": "^7.4 || ^8"
+            },
+            "require-dev": {
+                "amphp/amp": "^2.6",
+                "amphp/http-server": "^2.1",
+                "dms/phpunit-arraysubset-asserts": "dev-master",
+                "ergebnis/composer-normalize": "^2.28",
+                "friendsofphp/php-cs-fixer": "3.86.0",
+                "mll-lab/php-cs-fixer-config": "5.11.0",
+                "nyholm/psr7": "^1.5",
+                "phpbench/phpbench": "^1.2",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "2.1.22",
+                "phpstan/phpstan-phpunit": "2.0.7",
+                "phpstan/phpstan-strict-rules": "2.0.6",
+                "phpunit/phpunit": "^9.5 || ^10.5.21 || ^11",
+                "psr/http-message": "^1 || ^2",
+                "react/http": "^1.6",
+                "react/promise": "^2.0 || ^3.0",
+                "rector/rector": "^2.0",
+                "symfony/polyfill-php81": "^1.23",
+                "symfony/var-exporter": "^5 || ^6 || ^7",
+                "thecodingmachine/safe": "^1.3 || ^2 || ^3"
+            },
+            "suggest": {
+                "amphp/http-server": "To leverage async resolving with webserver on AMPHP platform",
+                "psr/http-message": "To use standard GraphQL server",
+                "react/promise": "To leverage async resolving on React PHP platform"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GraphQL\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A PHP port of GraphQL reference implementation",
+            "homepage": "https://github.com/webonyx/graphql-php",
+            "keywords": [
+                "api",
+                "graphql"
+            ],
+            "support": {
+                "issues": "https://github.com/webonyx/graphql-php/issues",
+                "source": "https://github.com/webonyx/graphql-php/tree/v15.24.0"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/webonyx-graphql-php",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2025-08-20T10:09:37+00:00"
         }
     ],
     "packages-dev": [
@@ -13879,6 +14743,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "bagisto/graphql-api": 20,
         "bagisto/image-cache": 20
     },
     "prefer-stable": true,
@@ -13894,6 +14759,6 @@
         "ext-pdo_mysql": "*",
         "ext-tokenizer": "*"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
